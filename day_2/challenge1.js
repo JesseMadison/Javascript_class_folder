@@ -1,14 +1,20 @@
-var rl = require("readline");
+var prompt = require('prompt');
 
-var prompts = rl.createInterface(process.stdin, process.stdout);
+ //
+ // Start the prompt
+ //
+ prompt.start();
 
-prompts.question("How many glass of water do you drink each day?", function (glasses) {
-    var message = "";
-    if (glasses > 5) {
-        message = "Great! Water is the key of a healthy life.";
-    } else {
-        message = "Are you drinking just " + glasses + " glass of water? You should drink at least " + (6 - glasses) + " more.";
-    }
-    console.log(message);
-    process.exit();
-});
+ //
+ // Get two properties from the user: username and email
+ //
+ var i = 0;
+ for (i < 10) {
+ prompt.get(['username', 'email'], function (err, result) {
+   //
+   // Log the results.
+   //
+   console.log('Command-line input received:');
+   console.log('  username: ' + result.username);
+   console.log('  email: ' + result.email);
+ });}
