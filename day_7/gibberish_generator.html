@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Gibberish Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
+  </head>
+  <body style="background-color:black; color:#00ff00; font-size:30px; font-family:'Special Elite';
+ ">
+    <p id='text' style="width:100vm;">> </p>
+<!-- <input id='input' type="text" name="" value="">
+<button id='button' type="button" name="button"></button> -->
+  <script>
+  // $(button).click('keypress', function(event) {
+  //   if (event.keyCode == 2) {
+  //       alert('hi.')
+//     }
+// })
+var randomArray = ["var", "hack", "chingchung"];
+
+var cursor = new Image();
+cursor.src = "http://gifimage.net/wp-content/uploads/2017/09/blinking-cursor-gif-5.gif";
+cursor.style = "width:1.5%";
+
+$(document).ready(function(){
+    window.addEventListener("keypress", myEventHandler);
+});
+
+function myEventHandler() {
+    var randomWord = randomArray[Math.floor(Math.random() * 3)];
+    $('#text').append(randomWord + " ").append(cursor)
+};
+  </script>
+
+  <script src="right_click_challenge.js"></script>
+  </body>
+</html>
