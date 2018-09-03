@@ -4,7 +4,7 @@ function onReady(callback) {
     // The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
     // The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
     // The ID value returned by setInterval() is used as the parameter for the clearInterval() method.
-    var intervalID = window.setInterval(checkReady, 1000);
+    var intervalID = window.setInterval(checkReady, 4000);
 
     function checkReady() {
         // The program will only pass this test when the whole body tag loads completely hence changing the body from undefined to true

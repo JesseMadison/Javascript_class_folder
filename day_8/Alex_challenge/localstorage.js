@@ -2,6 +2,7 @@
 function savelocalStorage() {
   localStorage._user = document.getElementById("user").value;
   localStorage._uage = document.getElementById("age").value;
+  console.log(localStorage)
 }
 
 function loadlocalStorage() {

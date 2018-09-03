@@ -12,7 +12,12 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(192, 192, 192, 0.5);
-    background-image: url("http://www.jordiros.me/glgifomatic/images/loading.gif");
+
+    /* Loading screen gifs */
+    background-image: url("http://www.jordiros.me/glgifomatic/images/loading.gif"); */
+    background-image: url("http://digitalspyuk.cdnds.net/16/33/480x240/landscape-1471601535-giphy-3.gif");
+   background-image: url("http://www.unexplainedmonsters.com/bigfoot/images/BigFoot.gif"); 
+
     background-repeat: no-repeat;
     background-position: center;
 }
